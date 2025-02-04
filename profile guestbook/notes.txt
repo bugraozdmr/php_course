@@ -1,2 +1,14 @@
 ##### PROFILE GUESTBOOK #####
 
+# direkt index.php'den çalıştırmak uygulamayı
+cd public
+php -S localhost:8000 index.php
+
+# test için dump alma
+var_dump($uri);die;
+
+## eğer direkt apache kalktığında mevcut klosore erişip uygulamayı görmek istersek
+.htaccess düzenlenmek zorunda // mvc reposunda var bu kullanım
+
+# schema yükleme
+php ../bin/schema.php

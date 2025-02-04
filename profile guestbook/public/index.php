@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-const INCLUDES_DIR = __DIR__ . '/../includes/';
+require_once './../bootstrap.php';
 
 session_start();
 
-require INCLUDES_DIR . 'router.php';
 
 // handle request
+dispatch($_SERVER['REQUEST_URI'], $_SERVER['REQUEST_METHOD']);
