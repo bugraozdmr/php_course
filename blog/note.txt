@@ -1,0 +1,18 @@
+####### BLOG PROJECT #######
+
+# composer baslatmak
+composer init
+- Would you like to define your dependencies (require) interactively [yes]? no
+- Would you like to define your dev dependencies (require-dev) interactively [yes]? no
+Add PSR-4 autoload mapping? Maps namespace "Bugra\Blog" to the entered relative path. [src/, n to skip]: n
+
+### Ancak ben eski projedeki composer.json'a benzettim orasını daha güzel bulduğum için (autoload önemli)
+
+# projenin gerekliliklerini yüklemek (eğer varsa zaten composer.json)
+composer install
+
+# autload olusturmak
+composer dump-autoload
+
+# uygulamayı çalıştırmak index.php'den (önermem .htaccess kullan)
+php -S localhost:8000 index.php
