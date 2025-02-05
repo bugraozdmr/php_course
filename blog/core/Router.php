@@ -20,7 +20,7 @@ class Router
         $route = $this->findRoute($uri, $method);
 
         if ($route === null) {
-            return $this->notFound();
+            return static::notFound();
         }
 
         // PostController@create
@@ -29,17 +29,15 @@ class Router
         return $this->callAction($controller, $action, $route['params']);
     }
 
-    protected function findRoute(string $uri, string $method) : ?array
-    {
+    protected function findRoute(string $uri, string $method): ?array {
         foreach ($this->routes as $route) {
-            $params = $this->matchRoute($route['uri'], $uri);
-            if ($params != null && $route['method'] === $method) {
-                return [...$route, 'params' => $params];
-            }
+          $params = $this->matchRoute($route['uri'], $uri);
+          if ($params !== null && $route['method'] === $method) {
+            return [...$route, 'params' => $params];
+          }
         }
-
         return null;
-    }
+      }
 
     protected function matchRoute(string $routeUri, string $requestUri) : ?array
     {
@@ -59,19 +57,21 @@ class Router
                 return null;
             }
         }
+
+        return $params;
     }
 
     protected function callAction(string $controller, string $action, array $params) : string
     {
-        $controllerClass = "App\\Controller\\$controller";
+        $controllerClass = "App\\Controllers\\$controller";
         return (new $controllerClass)->$action(...$params);
     }
 
     // move these later
-    protected function notFound() : string
+    public static function notFound() : string
     {
         http_response_code(404);
-        return '404 - Not Found';
+        echo View::render('errors/404');
         exit;
     }
 }

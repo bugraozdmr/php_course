@@ -12,5 +12,9 @@
             "email": "noneed@grant.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "scripts": {
+        "schema:load": "php bin/schema_load.php",
+        "schema:fixtures": "php bin/schema_fixtures.php"
+    }
 }

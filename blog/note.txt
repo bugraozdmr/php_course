@@ -16,3 +16,11 @@ composer dump-autoload
 
 # uygulamayı çalıştırmak index.php'den (önermem .htaccess kullan)
 php -S localhost:8000 index.php
+
+# stilleri vs. alması için (kök olarak public belirlendi)
+php -S localhost:8000 -t public
+
+# composer custom script yazma
+"scripts": {
+    "schema:load": "php bin/schema_load.php"
+}

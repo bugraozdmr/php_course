@@ -1,0 +1,16 @@
+[2025-02-05 13:24:57] Error: Exception: Database connection error. Please check the configuration. in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Database.php:31
+[2025-02-05 13:25:45] Error: Exception: An unexpected error occured. in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/bin/schema_load.php:10
+[2025-02-05 13:32:13] Error: Exception: TEst in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/app/Controllers/HomeController.php:11
+[2025-02-05 13:33:26] Error: Exception: TEst in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/app/Controllers/HomeController.php:11
+[2025-02-05 13:33:34] Error: Exception: TEst in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/app/Controllers/HomeController.php:11
+[2025-02-05 15:13:55] Error: PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'Grant' for key 'username' in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Database.php:52
+[2025-02-05 15:26:53] Error: PDOException: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`blog_app`.`posts`, CONSTRAINT `posts_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE) in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Database.php:52
+[2025-02-05 15:46:41] Error: ParseError: syntax error, unexpected token "}", expecting ";" in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Model.php:15
+[2025-02-05 17:54:58] Error: TypeError: PDOStatement::fetch(): Argument #2 ($cursorOrientation) must be of type int, string given in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Database.php:69
+[2025-02-05 17:58:03] Error: Exception: Error: Template file not found: /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/app/Views/posts/show.php in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/View.php:22
+[2025-02-05 18:07:40] Error: TypeError: Core\Router::callAction(): Return value must be of type string, null returned in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Router.php:67
+[2025-02-05 18:08:50] Error: Error: Class "App\Controllers\View" not found in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/app/Controllers/HomeController.php:9
+[2025-02-05 18:09:13] Error: Error: Class "App\Controllers\View" not found in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/app/Controllers/HomeController.php:9
+[2025-02-05 18:09:14] Error: Error: Class "App\Controllers\View" not found in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/app/Controllers/HomeController.php:9
+[2025-02-05 18:09:21] Error: Error: Class "App\Controllers\View" not found in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/app/Controllers/HomeController.php:9
+[2025-02-05 18:45:02] Error: Error: Class "View" not found in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/app/Views/post/index.php:9
