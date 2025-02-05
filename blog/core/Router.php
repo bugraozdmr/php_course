@@ -67,6 +67,12 @@ class Router
         return (new $controllerClass)->$action(...$params);
     }
 
+    public static function redirect(string $uri) : void
+    {
+        header("Location: $uri");
+        exit();
+    }
+
     // move these later
     public static function notFound() : string
     {

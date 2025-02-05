@@ -5,6 +5,8 @@ use Core\Router;
 
 require_once __DIR__ . '/../bootstrap.php';
 
+session_start();
+
 // order matters
 $router = new Router();
 

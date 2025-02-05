@@ -14,3 +14,5 @@
 [2025-02-05 18:09:14] Error: Error: Class "App\Controllers\View" not found in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/app/Controllers/HomeController.php:9
 [2025-02-05 18:09:21] Error: Error: Class "App\Controllers\View" not found in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/app/Controllers/HomeController.php:9
 [2025-02-05 18:45:02] Error: Error: Class "View" not found in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/app/Views/post/index.php:9
+[2025-02-05 20:44:41] Error: TypeError: Core\Model::find(): Return value must be of type ?App\Models\Post, false returned in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Model.php:21
+[2025-02-05 21:08:06] Error: TypeError: App\Models\User::findByEmail(): Return value must be of type ?App\Models\User, false returned in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/app/Models/User.php:26
