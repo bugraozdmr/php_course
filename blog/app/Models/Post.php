@@ -6,7 +6,7 @@ use Core\App;
 
 class Post extends Model
 {
-    protected static $table = 'posts';
+    protected static string $table = 'posts';
 
     public static function getRecent(?int $limit = null, ?int $page = null, ?string $search = null)
     {

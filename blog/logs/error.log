@@ -16,3 +16,41 @@
 [2025-02-05 18:45:02] Error: Error: Class "View" not found in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/app/Views/post/index.php:9
 [2025-02-05 20:44:41] Error: TypeError: Core\Model::find(): Return value must be of type ?App\Models\Post, false returned in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Model.php:21
 [2025-02-05 21:08:06] Error: TypeError: App\Models\User::findByEmail(): Return value must be of type ?App\Models\User, false returned in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/app/Models/User.php:26
+[2025-02-06 16:32:57] Error: Exception: Database connection error. Please check the configuration. in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Database.php:31
+[2025-02-06 16:32:57] Error: Exception: Database connection error. Please check the configuration. in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Database.php:31
+[2025-02-06 16:32:57] Error: Exception: Database connection error. Please check the configuration. in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Database.php:31
+[2025-02-06 17:03:26] Error: Exception: Database connection error. Please check the configuration. in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Database.php:31
+[2025-02-06 17:03:26] Error: Exception: Database connection error. Please check the configuration. in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Database.php:31
+[2025-02-06 17:03:36] Error: Exception: Database connection error. Please check the configuration. in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Database.php:31
+[2025-02-06 17:03:36] Error: Exception: Database connection error. Please check the configuration. in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Database.php:31
+[2025-02-06 17:03:36] Error: Exception: Database connection error. Please check the configuration. in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Database.php:31
+[2025-02-06 17:03:36] Error: Exception: Database connection error. Please check the configuration. in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Database.php:31
+[2025-02-06 17:03:37] Error: Exception: Database connection error. Please check the configuration. in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Database.php:31
+[2025-02-06 17:03:37] Error: Exception: Database connection error. Please check the configuration. in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Database.php:31
+[2025-02-06 17:03:37] Error: Exception: Database connection error. Please check the configuration. in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Database.php:31
+[2025-02-06 17:03:37] Error: Exception: Database connection error. Please check the configuration. in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Database.php:31
+[2025-02-06 17:03:38] Error: Exception: Database connection error. Please check the configuration. in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Database.php:31
+[2025-02-06 17:03:38] Error: Exception: Database connection error. Please check the configuration. in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Database.php:31
+[2025-02-06 17:03:38] Error: Exception: Database connection error. Please check the configuration. in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Database.php:31
+[2025-02-06 17:03:38] Error: Exception: Database connection error. Please check the configuration. in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Database.php:31
+[2025-02-06 17:03:39] Error: Exception: Database connection error. Please check the configuration. in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Database.php:31
+[2025-02-06 17:03:39] Error: Exception: Database connection error. Please check the configuration. in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Database.php:31
+[2025-02-06 17:03:39] Error: Exception: Database connection error. Please check the configuration. in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Database.php:31
+[2025-02-06 17:03:39] Error: Exception: Database connection error. Please check the configuration. in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Database.php:31
+[2025-02-06 17:03:39] Error: Exception: Database connection error. Please check the configuration. in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Database.php:31
+[2025-02-06 17:03:39] Error: Exception: Database connection error. Please check the configuration. in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Database.php:31
+[2025-02-06 17:03:40] Error: Exception: Database connection error. Please check the configuration. in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Database.php:31
+[2025-02-06 17:03:40] Error: Exception: Database connection error. Please check the configuration. in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Database.php:31
+[2025-02-06 17:03:42] Error: Exception: Database connection error. Please check the configuration. in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Database.php:31
+[2025-02-06 17:03:42] Error: Exception: Database connection error. Please check the configuration. in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Database.php:31
+[2025-02-06 17:12:18] Error: ParseError: syntax error, unexpected token "echo" in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/app/Views/layouts/main.php:20
+[2025-02-06 17:12:25] Error: ParseError: syntax error, unexpected token "=>", expecting "," or ";" in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/app/Views/layouts/main.php:20
+[2025-02-06 17:12:26] Error: ParseError: syntax error, unexpected token "=>", expecting "," or ";" in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/app/Views/layouts/main.php:20
+[2025-02-06 17:12:26] Error: ParseError: syntax error, unexpected token "=>", expecting "," or ";" in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/app/Views/layouts/main.php:20
+[2025-02-06 17:12:26] Error: ParseError: syntax error, unexpected token "=>", expecting "," or ";" in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/app/Views/layouts/main.php:20
+[2025-02-06 21:09:58] Error: TypeError: Cannot assign null to property App\Models\RememberToken::$expires_at of type string in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Database.php:69
+[2025-02-06 21:11:49] Error: TypeError: Cannot assign null to property App\Models\RememberToken::$expires_at of type string in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Database.php:69
+[2025-02-06 21:12:22] Error: TypeError: Cannot assign null to property App\Models\RememberToken::$expires_at of type string in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Database.php:69
+[2025-02-06 21:20:00] Error: TypeError: App\Models\RememberToken::findValid(): Return value must be of type ?App\Models\RememberToken, false returned in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/app/Models/RememberToken.php:34
+[2025-02-06 21:20:16] Error: TypeError: App\Models\RememberToken::findValid(): Return value must be of type ?App\Models\RememberToken, false returned in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/app/Models/RememberToken.php:34
+[2025-02-07 06:55:07] Error: TypeError: hash_equals(): Argument #1 ($known_string) must be of type string, array given in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/app/Services/CSRF.php:50

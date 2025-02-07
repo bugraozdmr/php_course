@@ -80,4 +80,11 @@ class Router
         echo View::render('errors/404');
         exit;
     }
+
+    public static function pageExpired() : string
+    {
+        http_response_code(419);
+        echo View::render('errors/419');
+        exit;
+    }
 }

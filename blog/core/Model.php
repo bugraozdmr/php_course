@@ -5,7 +5,9 @@ namespace Core;
 
 abstract class Model
 {
-    protected static $table;
+    protected static string $table;
+
+    public $id;
 
     public static function all() : array
     {
@@ -14,7 +16,7 @@ abstract class Model
         return $db->fetchAll("SELECT * FROM ".static::$table, [], static::class);
     }
 
-    public static function find(mixed $id) : static | null
+    public static function find(mixed $id) : ?static
     {
         $db = App::get('db');
         return $db->fetch("SELECT * FROM " .static::$table . " WHERE id = ?", [$id],
@@ -50,5 +52,43 @@ abstract class Model
             }
         }
         return $model;
+    }
+
+    public function save() : static
+    {
+        $db = App::get('db');
+        $data = get_object_vars($this);
+
+        if(!isset($this->id))
+        {
+            unset($data['id']);
+            return static::create($data);
+        }
+
+        unset($data['id']);
+        $setParts = array_map(fn($column) => "$column = ?", array_keys($data));
+        $sql = "UPDATE "
+        . static::$table 
+        . " SET " 
+        . implode(', ', $setParts) 
+        . " WHERE id = ?";
+        $params = array_values($data);
+        $params[] = $this->id;
+        $db->query($sql, $params);
+
+        return $this;
+    }
+
+    public function delete()
+    {
+        if(!isset($this->id))
+        {
+            return;
+        }
+
+        $db = App::get('db');
+        // the table which has called this method
+        $sql = "DELETE FROM " . static::$table . " WHERE id = ?";
+        $db->query($sql, [$this->id]);
     }
 }

@@ -24,3 +24,8 @@ php -S localhost:8000 -t public
 "scripts": {
     "schema:load": "php bin/schema_load.php"
 }
+
+# db'i yüklemek (proje kökteyden)
+composer schema:load
+
+#-# remember me ile session düşse bile tanıma yapılır ve session yeniden oluşturulur. Auth sağlanır.

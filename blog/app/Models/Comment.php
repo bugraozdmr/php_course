@@ -7,7 +7,7 @@ use Core\App;
 
 class Comment extends Model
 {
-    protected static $table = 'comments';
+    protected static string $table = 'comments';
 
     public static function forPost($postId) : array
     {

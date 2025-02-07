@@ -31,6 +31,7 @@ $db->query('SET FOREIGN_KEY_CHECKS=0');
 $db->query('TRUNCATE TABLE comments');
 $db->query('TRUNCATE TABLE posts');
 $db->query('TRUNCATE TABLE users');
+$db->query('TRUNCATE TABLE remember_tokens');
 $db->query('SET FOREIGN_KEY_CHECKS=1');
 
 

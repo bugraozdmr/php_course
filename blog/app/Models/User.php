@@ -14,7 +14,7 @@ class User extends Model
     public $role;
     public $created_at;
 
-    protected static $table = 'users';
+    protected static string $table = 'users';
 
     public static function findByEmail(string $email) : ?User
     {
