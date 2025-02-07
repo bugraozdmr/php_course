@@ -5,28 +5,60 @@ namespace Core;
 class Router
 {
     protected array $routes = [];
+    protected array $globalMiddleware = [];
+    protected array $routeMiddleware = [];
 
-    public function add(string $method, string $uri, string $controller) : void
-    {
+    public function add(string $method, string $uri, string $controller, array $middlewares = []): void {
         $this->routes[] = [
-            'method' => $method,
-            'uri' => $uri,
-            'controller' => $controller
+          'method' => $method,
+          'uri' => $uri,
+          'controller' => $controller,
+          'middlewares' => $middlewares
         ];
     }
 
-    public function dispatch(string $uri, string $method) : string
-    {
-        $route = $this->findRoute($uri, $method);
+    public function addGlobalMiddleware(string $middleware): void {
+        $this->globalMiddleware[] = $middleware;
+    }
+    
+    public function addRouteMiddleware(string $name, string $middleware): void {
+        $this->routeMiddleware[$name] = $middleware;
+    }
 
-        if ($route === null) {
-            return static::notFound();
+    public function dispatch(string $uri, string $method): string {
+      $route = $this->findRoute($uri, $method);
+      if (!$route) {
+        return static::notFound();
+      }
+      
+      // auth -> App/Middlewares/AuthMiddleware
+  
+      $middlewares = [
+        ...$this->globalMiddleware,
+        ...array_map(
+          fn($name) => $this->routeMiddleware[$name], 
+          $route['middlewares']
+        )
+      ];
+  
+      return $this->runMiddleware(
+        $middlewares,
+        function () use ($route) {
+          [$controller, $action] = explode('@', $route['controller']);
+          return $this->callAction($controller, $action, $route['params']);
         }
-
-        // PostController@create
-        [$controller, $action] = explode('@', $route['controller']);
-
-        return $this->callAction($controller, $action, $route['params']);
+      );
+    }
+  
+    protected function runMiddleware(array $middlewares, callable $target): mixed {
+      $next = $target;
+      foreach (array_reverse($middlewares) as $middleware) {
+        $next = function() use ($middleware, $next) {
+          error_log("Middleware: running $middleware");
+          return (new $middleware)->handle($next);
+        };
+      }
+      return $next();
     }
 
     protected function findRoute(string $uri, string $method): ?array {
@@ -78,6 +110,13 @@ class Router
     {
         http_response_code(404);
         echo View::render('errors/404');
+        exit;
+    }
+
+    public static function unauthorized() : string
+    {
+        http_response_code(401);
+        echo View::render('errors/401');
         exit;
     }
 

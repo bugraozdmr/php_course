@@ -18,6 +18,7 @@
         <a href="/posts">Posts</a>
         <?php if($user): ?>
             <form action="/logout" method="post">
+                <?= csrf_token() ?>
                 <button type="submit">Logout (<?= $user->email ?>)</button>
             </form>
         <?php else: ?>

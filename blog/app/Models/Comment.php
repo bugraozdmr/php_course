@@ -16,7 +16,7 @@ class Comment extends Model
          */
         $db = App::get('db');
         return $db->fetchAll(
-            "SELECT * FROM comments WHERE post_id = ? ORDER BY created_at",
+            "SELECT * FROM comments WHERE post_id = ? ORDER BY created_at DESC",
             [$postId],
             static::class
         );

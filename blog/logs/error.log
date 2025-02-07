@@ -54,3 +54,126 @@
 [2025-02-06 21:20:00] Error: TypeError: App\Models\RememberToken::findValid(): Return value must be of type ?App\Models\RememberToken, false returned in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/app/Models/RememberToken.php:34
 [2025-02-06 21:20:16] Error: TypeError: App\Models\RememberToken::findValid(): Return value must be of type ?App\Models\RememberToken, false returned in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/app/Models/RememberToken.php:34
 [2025-02-07 06:55:07] Error: TypeError: hash_equals(): Argument #1 ($known_string) must be of type string, array given in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/app/Services/CSRF.php:50
+[2025-02-07 09:05:57] Error: TypeError: Core\Model::find(): Return value must be of type ?App\Models\Post, false returned in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Model.php:23
+[2025-02-07 09:06:42] Error: TypeError: Core\Model::find(): Return value must be of type ?App\Models\Post, false returned in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Model.php:23
+[2025-02-07 09:06:50] Error: TypeError: Core\Model::find(): Return value must be of type ?App\Models\Post, false returned in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Model.php:23
+[2025-02-07 09:09:34] Error: TypeError: Core\Model::find(): Return value must be of type ?App\Models\Post, false returned in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Model.php:23
+[2025-02-07 09:09:36] Error: TypeError: Core\Model::find(): Return value must be of type ?App\Models\Post, false returned in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Model.php:23
+[2025-02-07 09:09:37] Error: TypeError: Core\Model::find(): Return value must be of type ?App\Models\Post, false returned in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Model.php:23
+[2025-02-07 09:09:37] Error: TypeError: Core\Model::find(): Return value must be of type ?App\Models\Post, false returned in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Model.php:23
+[2025-02-07 09:09:37] Error: TypeError: Core\Model::find(): Return value must be of type ?App\Models\Post, false returned in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Model.php:23
+[2025-02-07 09:09:37] Error: TypeError: Core\Model::find(): Return value must be of type ?App\Models\Post, false returned in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Model.php:23
+[2025-02-07 09:50:04] Error: Error: Call to undefined function <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <!-- public folder is root here -->
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>My Blog</h1>
+    </header>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/posts">Posts</a>
+                    <form action="/logout" method="post">
+                <button type="submit">Logout (admin@example.com)</button>
+            </form>
+        
+    </nav>
+    <main>
+        <h2>All Posts</h2>
+
+<form action="" method="GET">
+    <input type="text" name="search" value="" placeholder="Search posts...">
+    <button>Search</button>
+</form>
+
+    <article>
+        <h3>
+            <a href="/posts/1">
+                Welcome to Our Blog            </a>
+        </h3>
+        <p>
+            This is our first blog post. We hope you enjoy it!        </p>
+    </article>
+    <article>
+        <h3>
+            <a href="/posts/2">
+                PHP Tips and Tricks            </a>
+        </h3>
+        <p>
+            Here are some useful PHP tips and tricks for beginners...        </p>
+    </article>
+
+
+    <nav>
+        <ul>
+                            <li>
+                                            <span>1</span>
+                                    </li>
+                            <li>
+                                            <a href="?page=2">
+                            2                        </a>
+                                    </li>
+                    </ul>
+    </nav>
+    </main>
+    <footer>
+        <p>&copy; 2025 My Blog</p>
+    </footer>
+</body>
+</html>() in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Router.php:66
+[2025-02-07 09:54:54] Error: ArgumentCountError: Too few arguments to function Core\Router::{closure:Core\Router::runMiddleware():63}(), 0 passed in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Router.php on line 70 and exactly 1 expected in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Router.php:63
+[2025-02-07 09:56:06] Error: ArgumentCountError: Too few arguments to function Core\Router::{closure:Core\Router::runMiddleware():63}(), 0 passed in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Router.php on line 70 and exactly 1 expected in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Router.php:63
+[2025-02-07 10:04:23] Error: Error: Class "Auth" not found in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Router.php:64
+[2025-02-07 10:04:39] Error: Error: Class name must be a valid object or a string in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Router.php:64
+[2025-02-07 18:27:54] Error: Error: Class name must be a valid object or a string in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Router.php:64
+[2025-02-07 18:28:08] Error: Error: Class name must be a valid object or a string in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Router.php:64
+[2025-02-07 18:31:23] Error: Error: Class name must be a valid object or a string in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Router.php:64
+[2025-02-07 18:31:24] Error: Error: Class name must be a valid object or a string in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Router.php:64
+[2025-02-07 18:31:24] Error: Error: Class name must be a valid object or a string in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Router.php:64
+[2025-02-07 18:31:25] Error: Error: Class name must be a valid object or a string in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Router.php:64
+[2025-02-07 18:31:25] Error: Error: Class name must be a valid object or a string in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Router.php:64
+[2025-02-07 18:31:25] Error: Error: Class name must be a valid object or a string in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Router.php:64
+[2025-02-07 18:35:00] Error: Error: Class name must be a valid object or a string in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Router.php:67
+[2025-02-07 18:37:05] Error: Error: Class name must be a valid object or a string in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Router.php:65
+[2025-02-07 18:47:55] Error: Error: Call to undefined method Core\Router::addGlobalMiddlewares() in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/routes.php:9
+[2025-02-07 18:47:56] Error: Error: Call to undefined method Core\Router::addGlobalMiddlewares() in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/routes.php:9
+[2025-02-07 18:47:57] Error: Error: Call to undefined method Core\Router::addGlobalMiddlewares() in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/routes.php:9
+[2025-02-07 18:47:57] Error: Error: Call to undefined method Core\Router::addGlobalMiddlewares() in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/routes.php:9
+[2025-02-07 18:47:58] Error: Error: Call to undefined method Core\Router::addGlobalMiddlewares() in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/routes.php:9
+[2025-02-07 18:47:58] Error: Error: Call to undefined method Core\Router::addGlobalMiddlewares() in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/routes.php:9
+[2025-02-07 18:57:44] Error: TypeError: Core\Router::dispatch(): Return value must be of type string, Closure returned in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Router.php:50
+[2025-02-07 18:58:43] Error: TypeError: Core\Router::dispatch(): Return value must be of type string, Closure returned in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Router.php:50
+[2025-02-07 18:58:46] Error: TypeError: Core\Router::dispatch(): Return value must be of type string, Closure returned in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Router.php:50
+[2025-02-07 18:58:46] Error: TypeError: Core\Router::dispatch(): Return value must be of type string, Closure returned in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Router.php:50
+[2025-02-07 18:58:47] Error: TypeError: Core\Router::dispatch(): Return value must be of type string, Closure returned in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Router.php:50
+[2025-02-07 18:58:53] Error: TypeError: Core\Router::dispatch(): Return value must be of type string, Closure returned in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Router.php:50
+[2025-02-07 18:59:04] Error: TypeError: Core\Router::dispatch(): Return value must be of type string, Closure returned in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Router.php:50
+[2025-02-07 18:59:06] Error: TypeError: Core\Router::dispatch(): Return value must be of type string, Closure returned in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Router.php:50
+[2025-02-07 18:59:06] Error: TypeError: Core\Router::dispatch(): Return value must be of type string, Closure returned in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Router.php:50
+[2025-02-07 18:59:07] Error: TypeError: Core\Router::dispatch(): Return value must be of type string, Closure returned in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Router.php:50
+[2025-02-07 18:59:07] Error: TypeError: Core\Router::dispatch(): Return value must be of type string, Closure returned in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Router.php:50
+[2025-02-07 18:59:08] Error: TypeError: Core\Router::dispatch(): Return value must be of type string, Closure returned in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Router.php:50
+[2025-02-07 18:59:08] Error: TypeError: Core\Router::dispatch(): Return value must be of type string, Closure returned in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Router.php:50
+[2025-02-07 19:01:53] Error: TypeError: Core\Router::dispatch(): Return value must be of type string, Closure returned in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Router.php:50
+[2025-02-07 19:01:54] Error: TypeError: Core\Router::dispatch(): Return value must be of type string, Closure returned in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Router.php:50
+[2025-02-07 19:01:54] Error: TypeError: Core\Router::dispatch(): Return value must be of type string, Closure returned in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Router.php:50
+[2025-02-07 19:01:54] Error: TypeError: Core\Router::dispatch(): Return value must be of type string, Closure returned in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Router.php:50
+[2025-02-07 19:17:23] Error: TypeError: Core\Router::dispatch(): Return value must be of type string, Closure returned in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Router.php:50
+[2025-02-07 19:18:06] Error: Error: Object of class Closure could not be converted to string in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Router.php:62
+[2025-02-07 19:18:19] Error: TypeError: Core\Router::dispatch(): Return value must be of type string, Closure returned in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Router.php:50
+[2025-02-07 19:18:19] Error: TypeError: Core\Router::dispatch(): Return value must be of type string, Closure returned in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Router.php:50
+[2025-02-07 19:18:19] Error: TypeError: Core\Router::dispatch(): Return value must be of type string, Closure returned in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Router.php:50
+[2025-02-07 19:18:43] Error: TypeError: Core\Router::dispatch(): Return value must be of type string, Closure returned in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Router.php:49
+[2025-02-07 19:18:43] Error: TypeError: Core\Router::dispatch(): Return value must be of type string, Closure returned in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Router.php:49
+[2025-02-07 19:18:43] Error: TypeError: Core\Router::dispatch(): Return value must be of type string, Closure returned in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Router.php:49
+[2025-02-07 19:18:43] Error: TypeError: Core\Router::dispatch(): Return value must be of type string, Closure returned in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Router.php:49
+[2025-02-07 19:18:44] Error: TypeError: Core\Router::dispatch(): Return value must be of type string, Closure returned in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Router.php:49
+[2025-02-07 19:19:38] Error: TypeError: Core\Router::dispatch(): Return value must be of type string, Closure returned in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Router.php:49

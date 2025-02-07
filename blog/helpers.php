@@ -19,7 +19,7 @@ if(!function_exists('csrf_token'))
         $token = CSRF::getToken();
 
         return <<<TAG
-        <input type="hidden" name="{$tokenField}" value="{$token}"
+        <input type="hidden" name="{$tokenField}" value="{$token}"/>
         TAG;
     }
 }
