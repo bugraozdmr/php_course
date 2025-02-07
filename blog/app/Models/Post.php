@@ -8,6 +8,14 @@ class Post extends Model
 {
     protected static string $table = 'posts';
 
+    // model vars
+    public $id;
+    public $user_id;
+    public $title;
+    public $content;
+    public $views;
+    public $created_at;
+
     public static function getRecent(?int $limit = null, ?int $page = null, ?string $search = null)
     {
         /**

@@ -91,4 +91,50 @@ abstract class Model
         $sql = "DELETE FROM " . static::$table . " WHERE id = ?";
         $db->query($sql, [$this->id]);
     }
+
+    public static function getRecent(?int $limit = null, ?int $page = null)
+    {
+        /**
+         * @var \Core\Database $db
+         */
+        $db = App::get('db');
+
+        $query = "SELECT * FROM " . static::$table;
+        $params = [];
+
+        $query .= " ORDER BY created_at DESC";
+
+        if ($limit !== null) {
+            $query .= " LIMIT " . intval($limit); // PDO'da `LIMIT ?` çalışmaz
+        }
+
+        if($page !== null && $limit !== null)
+        {
+            $offset = ($page - 1) * $limit;
+            $query .= " OFFSET ?";
+            $params[] = $offset;
+        }
+
+        return $db->fetchAll(
+            $query,
+            $params, // Burada sadece `$params` geçiyoruz
+            static::class
+        );
+    }
+
+    public static function count(?string $search = null) : int
+    {
+        /**
+         * @var \Core\Database $db
+         */
+        $db = App::get('db');
+
+        $query = "SELECT COUNT(*) FROM " . static::$table;
+
+
+        return (int)$db->query(
+            $query,
+            []
+        )->fetchColumn();
+    }
 }

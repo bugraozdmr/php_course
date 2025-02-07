@@ -126,4 +126,11 @@ class Router
         echo View::render('errors/419');
         exit;
     }
+
+    public static function forbidden() : string
+    {
+        http_response_code(403);
+        echo View::render('errors/403');
+        exit;
+    }
 }

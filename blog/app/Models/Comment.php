@@ -21,4 +21,6 @@ class Comment extends Model
             static::class
         );
     }
+
+    
 }

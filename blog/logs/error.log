@@ -177,3 +177,6 @@
 [2025-02-07 19:18:43] Error: TypeError: Core\Router::dispatch(): Return value must be of type string, Closure returned in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Router.php:49
 [2025-02-07 19:18:44] Error: TypeError: Core\Router::dispatch(): Return value must be of type string, Closure returned in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Router.php:49
 [2025-02-07 19:19:38] Error: TypeError: Core\Router::dispatch(): Return value must be of type string, Closure returned in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/Router.php:49
+[2025-02-07 20:59:55] Error: Exception: Error: Template file not found: /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/app/Views/admin/posts/index.php in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/View.php:36
+[2025-02-07 21:13:14] Error: Exception: Error: Template file not found: /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/app/Views/admin/posts/create.php in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/View.php:36
+[2025-02-07 21:15:01] Error: Exception: Error: Template file not found: /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/app/Views/admin/posts/edit.php in /Applications/XAMPP/xamppfiles/htdocs/php_course/blog/core/View.php:36

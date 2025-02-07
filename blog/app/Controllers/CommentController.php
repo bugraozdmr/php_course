@@ -2,6 +2,7 @@
 namespace App\Controllers;
 
 use App\Models\Comment;
+use App\Services\Authorization;
 use App\Services\CSRF;
 use Core\Router;
 use App\Services\Auth;
@@ -10,7 +11,7 @@ class CommentController
 {
     public static function store($id)
     {
-        
+        Authorization::verify('comment');
 
         $content = htmlspecialchars(trim($_POST['content'] ?? ''), ENT_QUOTES, 'UTF-8');
 
